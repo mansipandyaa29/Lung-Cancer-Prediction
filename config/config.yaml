@@ -1,0 +1,6 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  local_file_path: '/Users/mansipandya/Desktop/cancerData.csv'
