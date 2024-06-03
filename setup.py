@@ -6,10 +6,10 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-# installs lung-cancer-prediction as local package
+# installs LungCancerPrediction as local package
 REPO_NAME = "Lung-Cancer-Prediction"
 AUTHOR_USER_NAME = "mansipandyaa29"
-SRC_REPO = "lung-cancer-prediction"
+SRC_REPO = "LungCancerPrediction"
 AUTHOR_EMAIL = "mansipandyaa29@gmail.com"
 
 
