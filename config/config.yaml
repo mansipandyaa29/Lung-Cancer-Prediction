@@ -4,3 +4,8 @@ artifacts_root: artifacts
 data_ingestion:
   root_dir: artifacts/data_ingestion
   local_file_path: '/Users/mansipandya/Desktop/cancerData.csv'
+
+data_validation:
+  root_dir: artifacts/data_validation
+  data_dir: artifacts/data_ingestion/cancerData.csv
+  STATUS_FILE: artifacts/data_validation/status.txt

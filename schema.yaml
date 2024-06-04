@@ -1,0 +1,30 @@
+COLUMNS:
+  index: int64
+  Patient Id: object
+  Age: int64
+  Gender: int64
+  Air Pollution: int64
+  Alcohol use: int64
+  Dust Allergy: int64
+  OccuPational Hazards: int64
+  Genetic Risk: int64
+  chronic Lung Disease: int64
+  Balanced Diet: int64
+  Obesity: int64
+  Smoking: int64
+  Passive Smoker: int64
+  Chest Pain: int64
+  Coughing of Blood: int64
+  Fatigue: int64
+  Weight Loss: int64
+  Shortness of Breath: int64
+  Wheezing: int64
+  Swallowing Difficulty: int64
+  Clubbing of Finger Nails: int64
+  Frequent Cold: int64
+  Dry Cough: int64
+  Snoring: int64
+  Level: object
+
+TARGET_COLUMN:
+  name: Level
