@@ -1,3 +1,7 @@
-ElasticNet:
-  alpha: 0.2
-  l1_ratio: 0.1
+RandomForestClassifier:
+  n_estimators: 50
+  max_depth: 2
+  min_samples_split: 2
+  min_samples_leaf: 2
+  max_samples: 0.5
+  criterion: 'gini'    

@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 from LungCancerPrediction import logger
-from sklearn.linear_model import ElasticNet
 import joblib
+from sklearn.ensemble import RandomForestClassifier
 from LungCancerPrediction.entity.config_entity import ModelTrainerConfig
 
 class ModelTrainer:
@@ -19,8 +19,20 @@ class ModelTrainer:
         train_y = train_data[[self.config.target_column]]
         test_y = test_data[[self.config.target_column]]
 
+        y_train = train_y.values.ravel()
+        y_test = test_y.values.ravel()
 
-        lr = ElasticNet(alpha=self.config.alpha, l1_ratio=self.config.l1_ratio, random_state=42)
-        lr.fit(train_x, train_y)
+        params = {
+        'n_estimators': self.config.n_estimators,
+        'max_depth': self.config.max_depth,
+        'min_samples_split': self.config.min_samples_split,
+        'min_samples_leaf': self.config.min_samples_leaf,
+        'max_samples': self.config.max_samples,
+        'criterion': self.config.criterion
+        }
 
-        joblib.dump(lr, os.path.join(self.config.root_dir, self.config.model_name))
+
+        model_rf = RandomForestClassifier(**params)
+        model_rf.fit(train_x, y_train)
+
+        joblib.dump(model_rf, os.path.join(self.config.root_dir, self.config.model_name))
