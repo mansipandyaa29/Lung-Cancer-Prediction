@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/assets/img/wine.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Lung Cancer Prediction</h1>
+                            <span class="subheading">A Lung Cancer Prediction Web App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+
+           <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-v9 by Colorlib</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="static/css2/nunito-font.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="static/css2/style.css"/>
+</head>
+<body class="form-v9">
+	<div class="page-content">
+		<div class="form-v9-content" style="background-image: url('static/assets/img/form-v9.jpg')">
+			<form class="form-detail" action="/predict" method="post">
+				<h2>Please Fill The Information</h2>
+
+				<div class="form-row-total">
+
+					<div class="form-row">
+                        <label for="age"> Age:</label>
+						<input type="text" name="age" id="age" class="input-text" placeholder="age" required>
+					</div>
+
+					<div class="form-row">
+                        <label for="gender"> Gender:</label>
+						<input type="text" name="gender" id="gender" class="input-text" placeholder="gender" required>
+					</div>
+
+				</div>
+
+
+				<div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="air_pollution"> Air Pollution:</label>
+						<input type="text" name="air_pollution" id="air_pollution" class="input-text" placeholder="air_pollution" required>
+					</div>
+
+
+                    <div class="form-row">
+                        <label for="alcohol_use"> Alcohol Use:</label>
+						<input type="text" name="alcohol_use" id="alcohol_use" class="input-text" placeholder="alcohol_use" required>
+					</div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="dust_allergy"> Dust Allergy</label>
+						<input type="text" name="dust_allergy" id="dust_allergy" class="input-text" placeholder="dust_allergy" required>
+					</div>
+
+                    <div class="form-row">
+                        <label for="occupational_hazards"> Occupational Hazards:</label>
+						<input type="text" name="occupational_hazards" id="occupational_hazards" class="input-text" placeholder="occupational_hazards" required>
+					</div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="genetic_risk"> Genetic Risk:</label>
+						<input type="text" name="genetic_risk" id="genetic_risk" class="input-text" placeholder="genetic_risk" required>
+					</div>
+
+                    <div class="form-row">
+                        <label for="chronic_lung_disease"> Chronic Lung Disease:</label>
+                        <input type = "text" name="chronic_lung_disease" id="chronic_lung_disease" class="input-text" placeholder="chronic_lung_disease" required>
+                    </div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="balanced_diet"> Balanced Diet:</label>
+                        <input type="text" name="balanced_diet" id="balanced_diet" class="input-text" placeholder="balanced_diet" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="obesity"> Obesity:</label>
+                        <input type="text" name="obesity" id="obesity" class="input-text" placeholder="obesity" required>
+                    </div>
+
+				</div>
+
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="smoking"> Smoking:</label>
+                        <input type="text" name="smoking" id="smoking" class="input-text" placeholder="smoking" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="passive_smoker"> Passive Smoker:</label>
+                        <input type="text" name="passive_smoker" id="passive_smoker" class="input-text" placeholder="passive_smoker" required>
+                    </div>
+
+				</div>
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="chest_pain"> Chest Pain:</label>
+                        <input type="text" name="chest_pain" id="chest_pain" class="input-text" placeholder="chest_pain" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="coughing_of_blood"> Coughing of Blood:</label>
+                        <input type="text" name="coughing_of_blood" id="coughing_of_blood" class="input-text" placeholder="coughing_of_blood" required>
+                    </div>
+
+				</div>
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="fatigue"> Fatigue:</label>
+                        <input type="text" name="fatigue" id="fatigue" class="input-text" placeholder="fatigue" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="weight_loss"> Weight Loss:</label>
+                        <input type="text" name="weight_loss" id="weight_loss" class="input-text" placeholder="weight_loss" required>
+                    </div>
+
+				</div>
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="shortness_of_breath"> Shortness of Breath:</label>
+                        <input type="text" name="shortness_of_breath" id="shortness_of_breath" class="input-text" placeholder="shortness_of_breath" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="wheezing"> Wheezing:</label>
+                        <input type="text" name="wheezing" id="wheezing" class="input-text" placeholder="wheezing" required>
+                    </div>
+
+				</div>
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="swallowing_difficulty"> Swallowing Difficulty:</label>
+                        <input type="text" name="swallowing_difficulty" id="swallowing_difficulty" class="input-text" placeholder="swallowing_difficulty" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="clubbing_of_finger_nails"> Clubbing of Finger Nails:</label>
+                        <input type="text" name="clubbing_of_finger_nails" id="clubbing_of_finger_nails" class="input-text" placeholder="clubbing_of_finger_nails" required>
+                    </div>
+
+				</div>
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="frequent_cold"> Frequent Cold:</label>
+                        <input type="text" name="frequent_cold" id="frequent_cold" class="input-text" placeholder="frequent_cold" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="dry_cough"> Dry Cough:</label>
+                        <input type="text" name="dry_cough" id="dry_cough" class="input-text" placeholder="dry_cough" required>
+                    </div>
+
+				</div>
+
+                <div class="form-row-total">
+
+                    <div class="form-row">
+                        <label for="snoring"> Snoring:</label>
+                        <input type="text" name="snoring" id="snoring" class="input-text" placeholder="snoring" required>
+                    </div>
+
+				</div>
+
+
+
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Predict">
+				</div>
+			</form>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+        </div>
+
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/boktiarahmed73/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/dswithbappy">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/entbappy">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic"></div>
+                        <div class="small text-center text-muted fst-italic"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/js/scripts.js"></script>
+    </body>
+</html>

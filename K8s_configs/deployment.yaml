@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: LungCancerPrediction
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: LungCancerPrediction
+  template:
+    metadata:
+      labels:
+        app: LungCancerPrediction
+    spec:
+      containers:
+      - name: LungCancerPrediction
+        image: gcr.io/lung-cancer-prediction/myapp:v1
+        ports:
+        - containerPort: 5000
