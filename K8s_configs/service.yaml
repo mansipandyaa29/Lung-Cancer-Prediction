@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: LungCancerPrediction
+  name: lung-cancer-prediction
 spec:
   type: LoadBalancer
   selector:
-    app: LungCancerPrediction
+    app: lung-cancer-prediction
   ports:
   - port: 80
     targetPort: 5000
