@@ -13,5 +13,4 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
-
--e src/LungCancerPrediction
+-e .
